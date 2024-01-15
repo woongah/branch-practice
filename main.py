@@ -1,8 +1,8 @@
-from random import sample
+from random import randint
 
 
 def get_luckies() -> list:
-    return sample(range(1,45+1), k=6)
+    return [randint(1,45) for _ in range(6)]
 
 if __name__=='__main__':
     print(get_luckies())
